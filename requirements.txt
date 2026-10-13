@@ -1,0 +1,6 @@
+discord.py==2.7.1
+python-dotenv==1.2.2
+easyocr==1.7.2
+opencv-python-headless==4.13.0.92
+numpy==2.3.5
+google-genai==2.6.0

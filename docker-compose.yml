@@ -1,0 +1,23 @@
+services:
+  cocoanut:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: Cocoanut
+    restart: unless-stopped
+    working_dir: /app
+    env_file:
+      - .env
+    volumes:
+      - ocr_models:/root/.EasyOCR
+      - bot_logs:/app/logs
+      - bot_data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=Asia/Bangkok
+    stop_grace_period: 30s
+
+volumes:
+  ocr_models:
+  bot_logs:
+  bot_data:

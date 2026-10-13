@@ -1,0 +1,51 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+
+# Git
+.git/
+.gitignore
+
+# Docker
+dockerfile
+Dockerfile
+docker-compose.yml
+
+# Logs
+*.log
+logs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# SQLite temp/journal
+*.db-shm
+*.db-wal
+
+# Environment files
+.env
+.env.example
+
+# Docs
+README.md
+
+# Build artifacts
+build/
+dist/
+
+# Tests
+test/
+
+# Local daily usage data
+data/
